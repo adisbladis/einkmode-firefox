@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Toggle Website Colors (Global)",
+  "version": "1.0.0",
+
+  "description": "__MSG_extensionDescription__",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{2327d818-55d3-441d-aea2-8b44aa2cb9aa}",
+      "strict_min_version": "61.0"
+    }
+  },
+
+  "icons": {
+    "24": "icons/toggleglobalcolors.svg",
+    "32": "icons/toggleglobalcolors.svg",
+    "50": "icons/toggleglobalcolors.svg"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "icons/toggleglobalcolors.svg",
+    "default_title": "__MSG_button_title__",
+    "theme_icons": [{
+      "dark": "icons/toggleglobalcolors.svg",
+      "light": "icons/toggleglobalcolors-light.svg",
+      "size": 19
+    }]
+  },
+
+  "permissions": [
+    "browserSettings"
+  ],
+
+  "default_locale": "en"
+}
