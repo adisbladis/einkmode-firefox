@@ -21,9 +21,6 @@ release: $(ADDON)-$(VERSION).xpi
 %.xpi: $(FILES) icons/$(ADDON)-light.svg
 	@zip -9 - $^ > $@
 
-togglecache-trunk.xpi: $(FILES) icons/togglecache-light.svg
-	@zip -9 - $^ > $@
-
 icons/$(ADDON)-light.svg: icons/$(ADDON).svg
 	@sed 's/:#0c0c0d/:#f9f9fa/g' $^ > $@
 
