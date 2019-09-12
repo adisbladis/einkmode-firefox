@@ -1,5 +1,5 @@
 Toggle Website Colors (Global)
-====================
+==============================
 
 Main repository: https://github.com/M-Reimer/toggleglobalcolors.
 
