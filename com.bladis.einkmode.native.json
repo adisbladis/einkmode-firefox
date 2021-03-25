@@ -1,0 +1,7 @@
+{
+  "name": "com.bladis.einkmode.native",
+  "description": "E-ink optimised firefox",
+  "path": "@execpath@",
+  "type": "stdio",
+  "allowed_extensions": [ "einkmode@blad.is" ]
+}

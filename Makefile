@@ -18,12 +18,15 @@ VERSION = $(shell sed -n  's/^  "version": "\([^"]\+\).*/\1/p' manifest.json)
 
 ANDROIDDEVICE = $(shell adb devices | cut -s -d$$'\t' -f1 | head -n1)
 
-trunk: $(ADDON)-trunk.xpi
+trunk: $(ADDON)-trunk.xpi native
 
-release: $(ADDON)-$(VERSION).xpi
+release: $(ADDON)-$(VERSION).xpi native
 
 %.xpi: $(FILES) icons/$(ADDON)-light.svg
 	@zip -9 - $^ > $@
+
+native:
+	go build
 
 icons/$(ADDON)-light.svg: icons/$(ADDON).svg
 	@sed 's/:#0c0c0d/:#f9f9fa/g' $^ > $@
