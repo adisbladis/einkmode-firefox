@@ -16,6 +16,12 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+const appID = "com.github.einkmode.native";
+
+const port = browser.runtime.connectNative(appID)
+
+// console.log("FOO")
+
 // Fired if the toolbar button is clicked.
 // Toggles the document colors setting.
 async function ToolbarButtonClicked() {
@@ -45,6 +51,18 @@ if (browser.browserAction.setBadgeBackgroundColor !== undefined) // Not Android
 
 // Register event listeners
 browser.browserAction.onClicked.addListener(ToolbarButtonClicked);
+// Native messaging port
+port.onMessage.addListener(async (msg) => {
+  console.log(msg)
+  const coloursDisable = msg.coloursDisable
+
+  const value = coloursDisable ? "always" : "never"
+  await browser.browserSettings.overrideDocumentColors.set({value: value});
+  await UpdateBadge();
+
+  // allow async responses after this function returns
+  return true;
+});
 
 // Update badge for the first time
 UpdateBadge();

@@ -1,2 +1,4 @@
 *.xpi
 icons/toggleglobalcolors-light.svg
+einkmode
+.direnv

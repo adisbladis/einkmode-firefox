@@ -7,7 +7,7 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "{2327d818-55d3-441d-aea2-8b44aa2cb9aa}",
+      "id": "einkmode@blad.is",
       "strict_min_version": "61.0"
     }
   },
@@ -44,7 +44,8 @@
   },
 
   "permissions": [
-    "browserSettings"
+    "browserSettings",
+    "nativeMessaging"
   ],
 
   "default_locale": "en"
