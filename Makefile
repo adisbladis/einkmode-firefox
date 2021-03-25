@@ -12,7 +12,7 @@ FILES = manifest.json \
         $(wildcard _locales/*/messages.json) \
         $(wildcard icons/*.svg)
 
-ADDON = toggleglobalcolors
+ADDON = einkmode-firefox
 
 VERSION = $(shell sed -n  's/^  "version": "\([^"]\+\).*/\1/p' manifest.json)
 

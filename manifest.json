@@ -13,9 +13,9 @@
   },
 
   "icons": {
-    "24": "icons/toggleglobalcolors.svg",
-    "32": "icons/toggleglobalcolors.svg",
-    "50": "icons/toggleglobalcolors.svg"
+    "24": "icons/einkmode-firefox.svg",
+    "32": "icons/einkmode-firefox.svg",
+    "50": "icons/einkmode-firefox.svg"
   },
 
   "background": {
@@ -24,11 +24,11 @@
 
   "browser_action": {
     "browser_style": true,
-    "default_icon": "icons/toggleglobalcolors.svg",
+    "default_icon": "icons/einkmode-firefox.svg",
     "default_title": "__MSG_button_title__",
     "theme_icons": [{
-      "dark": "icons/toggleglobalcolors.svg",
-      "light": "icons/toggleglobalcolors-light.svg",
+      "dark": "icons/einkmode-firefox.svg",
+      "light": "icons/einkmode-firefox-light.svg",
       "size": 19
     }]
   },

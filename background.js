@@ -66,4 +66,4 @@ port.onMessage.addListener(async (msg) => {
 // Update badge for the first time
 UpdateBadge();
 
-IconUpdater.Init("icons/toggleglobalcolors.svg");
+IconUpdater.Init("icons/einkmode-firefox.svg");
