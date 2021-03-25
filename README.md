@@ -1,4 +1,4 @@
-Toggle Website Colors (Global)
+E-ink optimised Firefox
 ==============================
 
 Main repository: https://github.com/adisbladis/einkmode-firefox.
