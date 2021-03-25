@@ -16,11 +16,10 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-const appID = "com.github.einkmode.native";
+const appID = "com.bladis.einkmode.native";
 
 const port = browser.runtime.connectNative(appID)
 
-// console.log("FOO")
 
 // Fired if the toolbar button is clicked.
 // Toggles the document colors setting.

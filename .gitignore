@@ -1,4 +1,4 @@
 *.xpi
 icons/toggleglobalcolors-light.svg
-einkmode
+einkmode-firefox
 .direnv

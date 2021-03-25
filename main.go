@@ -1,4 +1,4 @@
-package main // import "github.com/adisbladis/einkmode"
+package main // import "github.com/adisbladis/einkmode-firefox"
 
 import (
 	"bytes"
